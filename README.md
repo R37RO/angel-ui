@@ -102,7 +102,7 @@ cd angel-ui
 ```
 npm install -g npm
 ```
-If this shows error means there are new dependency avilable, (eg: "sass": "~1.32.0", "sass-loader": "^10",)
+
 
 ### Addition stuff
 ```
@@ -122,6 +122,7 @@ npm install -g yarn
 yarn install
 ```
 Success install will download and install all the dependencies listed inside package.json to node_modules folder
+If this shows error means there are new dependency avilable, (eg: "sass-loader": "^10", etc)
 
 
 #### Compiles and hot-reloads for development
