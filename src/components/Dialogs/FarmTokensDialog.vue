@@ -328,9 +328,16 @@ export default {
       })
       if (res) {
           this.$emit("closeDialog");
+          
+          
+          //if you are getting private key error use below
+          //const res = await this.fw_transfer_all_tokens(this.farm.account_name, this.to_farm_account, this.fwg_t_qty, this.fww_t_qty, this.fwf_t_qty, this.farm.settings.delegated_account);
+          
+          
           const res = await this.fw_transfer_all_tokens(this.farm.account_name, this.to_farm_account, 
                                                         this.fwg_t_qty, this.fww_t_qty, this.fwf_t_qty, '',
                                   this.farm.settings.private_key, this.farm.settings.delegated_account);
+           // above
           if (res.status) {
               this.$toast.success(this.$t("Successfully transferred") + " " + amount + " " +
                                   this.$t("from") + " " + this.farm.account_name + this.$t('to') + " " + this.to_farm_account);
